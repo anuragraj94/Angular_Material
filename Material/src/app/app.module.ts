@@ -23,6 +23,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { TblComponent } from './tbl/tbl.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     AboutComponent,
     ContactComponent,
     TableComponent,
-    ApiComponent
+    ApiComponent,
+    TblComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatGridListModule,
     MatProgressSpinnerModule,
     MatProgressBarModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
